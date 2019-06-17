@@ -1,3 +1,3 @@
 # Custom-django-api
 
-[Proposal](#)
+[Proposal](https://github.com/Sukhrobjon/predict-movie-genre/blob/master/proposal.md)
