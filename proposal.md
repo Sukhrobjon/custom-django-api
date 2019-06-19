@@ -1,4 +1,4 @@
-### Know The Movie Genre 
+### Know Your Favourite Movie Genre 
 
 - This API uses a trained machine learning model to predict the movie
 genre based on user's description about the movie.
