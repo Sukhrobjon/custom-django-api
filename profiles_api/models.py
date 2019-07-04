@@ -26,9 +26,12 @@ class UserProfileManager(BaseUserManager):
 
         user = self.create_user(email, name, password)
 
-        user.is_staff = True
         user.is_superuser = True
+        user.is_staff = True
+        
         user.save(using=self._db)
+
+        return user
             
 class UserProfile(AbstractBaseUser, PermissionsMixin):
     """Database model for users in the system"""
@@ -37,11 +40,10 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
 
-
     objects = UserProfileManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FILEDS = ['name']
+    REQUIRED_FIELDS = ['name']
 
 
     def get_full_name(self):
