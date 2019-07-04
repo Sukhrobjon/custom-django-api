@@ -1,9 +1,7 @@
-### Know Your Favourite Movie Genre 
+### User Profile and Feed API 
 
-- This API uses a trained machine learning model to predict the movie
-genre based on user's description about the movie.
+- The Api lets users create a profile and status
 
-- The `json` result will be the genres of the movie
+- This api can be usefull as it uses the very common architecture in social media, or any other platform where user has profile and status. This can be used as an api of the users' dashboard
 
-- Since the number of sample I have to train the model is small dataset, Right now the accuracy of the model is **50%**. I am working on to improve the model performance.
 
