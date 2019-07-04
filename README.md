@@ -31,6 +31,16 @@ The app is live on following servers:
 - [AWS](http://ec2-13-59-212-52.us-east-2.compute.amazonaws.com/api/)
 
 
+### Available Endpoints
+### Base URL: http://ec2-13-59-212-52.us-east-2.compute.amazonaws.com/api/
+
+|       Method        |      Resources     |      Return Object                         
+| -------------       |--------------------| ------------------------------------------
+| GET                 | /profile                       | All Users         
+| GET                 | /profile/:id             | Specific user   
+| GET                 | /feed               | All feeds 
+| GET                 | /feed/:id           | Specific feed 
+
 
 ## Built With
 
@@ -38,9 +48,6 @@ The app is live on following servers:
 * [Django Rest Framework](https://www.django-rest-framework.org/) - Tool for Web APIs 
 * [AWS](https://rometools.github.io/rome/) - Amazon Web Services, Cloud computing platforms
 * [Heroku](https://heroku.com) - Cloud Platform
-
-
-
 
 
 

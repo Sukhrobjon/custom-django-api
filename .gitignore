@@ -248,6 +248,8 @@ pip-selfcheck.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
+# Steps file
+steps_to_update_aws.md
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history

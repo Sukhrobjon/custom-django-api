@@ -136,7 +136,7 @@ class UserProfileFeedViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.ProfileFeedItemSerializer
     queryset = models.ProfileFeedItem.objects.all()
     permission_classes = (
-        # permissions.UpdateOwnStatus,
+        permissions.UpdateOwnStatus,
         IsAuthenticatedOrReadOnly
     )
 
