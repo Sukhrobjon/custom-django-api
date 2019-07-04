@@ -3,6 +3,8 @@ from django.contrib.auth.models import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.models import BaseUserManager
 
+from django.conf import settings
+
 # custom create user profile manager class
 class UserProfileManager(BaseUserManager):
     """Manager for user profiles"""
@@ -64,7 +66,10 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
 class ProfileFeedItem(models.Model):
     """Profile status update."""
 
-    user_profile = models.ForeignKey('UserProfile', on_delete=models.CASCADE)
+    user_profile = models.ForeignKey(
+        settings.AUTH_USER_MODEL, 
+        on_delete=models.CASCADE
+    )
     status_text = models.CharField(max_length=255)
     created_on = models.DateTimeField(auto_now_add=True)
 

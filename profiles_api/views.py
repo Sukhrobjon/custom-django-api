@@ -20,7 +20,7 @@ from profiles_api import permissions
 class HelloApiView(APIView):
     """Test API View."""
 
-    # serializer_class = serializers.HelloSerializer
+    serializer_class = serializers.HelloSerializer
 
     def get(self, request, format=None):
         """Returns a list of APIView features."""
@@ -128,3 +128,15 @@ class UserLoginApiView(ObtainAuthToken):
     """Handle creating user the authenticated tokens"""
 
     renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
+
+class UserProfileFeedViewSet(viewsets.ModelViewSet):
+    """Handles creating, reading and updating profile and feed items"""
+
+    authentication_classes = (TokenAuthentication, )
+    serializer_class = serializers.ProfileFeedItemSerializer
+    queryset = models.ProfileFeedItem.objects.all()
+
+    def perform_create(self, serializer):
+        """Set the user profile to the logged in the user"""
+       
+        serializer.save(user_profile=self.request.user)
