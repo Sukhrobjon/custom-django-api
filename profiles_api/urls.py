@@ -4,8 +4,6 @@ from rest_framework.routers import DefaultRouter
 
 from profiles_api import views
 
-# from api.views import UserViewSet, PizzaViewSet, ToppingViewSet, PizzaToppingViewSet
-
 router = DefaultRouter()
 
 router.register('hello-viewset', views.HelloViewSet, base_name='hello-viewset')

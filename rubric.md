@@ -14,8 +14,10 @@ _**NOTE**: Must score higher than a **`70%`** to pass._
 | Has purpose & fulfills proposal            |   `20`    |   `00`   |    ☑     |
 | Integrates an open source app              |   `20`    |   `00`   |    ☑     |
 | Deployed & usable                          |   `15`    |   `00`   |    ☑     |
+| Deployed AWS **bonus**                     |   `30`    |   `00`   |    ☑     |
 | Includes database migrations in each app   |   `15`    |   `00`   |    ☑     |
 | `README` with documentation                |   `10`    |   `00`   |    ☑     |
 | Public GitHub repo                         |    `5`    |   `00`   |    ☑     |
 | No exposed secrets                         |    `5`    |   `00`   |    ☑     |
 | **TOTAL**                                  | **`275`** | **`00`** |          |
+
