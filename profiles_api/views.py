@@ -117,3 +117,6 @@ class UserProfileViewSet(viewsets.ModelViewSet):
 
     serializer_class = serializers.UserProfileSerializer
     queryset = models.UserProfile.objects.all()
+    authentication_classes = (TokenAuthentication,)
+    permissions_classes = (permissions.UpdateOwnProfile)
+
