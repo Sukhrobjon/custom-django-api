@@ -22,7 +22,7 @@ A step by step series of examples that tell you how to get a development env run
 
 1. activate venv  `source venv\bin\activate`
 
-1. pip install the dependencies in `requierements.txt` file `pip install -r requirements.txt`
+1. pip install the dependencies in `requierements.txt` file using `pip install -r requirements.txt`
 
 ## Deployment
 The app is live on following servers:
