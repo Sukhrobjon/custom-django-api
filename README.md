@@ -1,6 +1,6 @@
 # Profiles-Rest-API
 This api can be usefull as it uses the very common architecture in social media, or any other platform where user has profile and status. This can be used as an api of the users' dashboard
-You can find the more in [Proposal](https://github.com/Sukhrobjon/predict-movie-genre/blob/master/proposal.md)
+You can find the more in [Proposal](https://github.com/Sukhrobjon/profiles-rest-api/blob/master/proposal.md)
 
 ## Getting Started
 
